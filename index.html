@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="padre">
+        <div class="medio">
+            <div class="arriba"><div id="sangre"  class="centro"></div></div>
+            <div class="abajo"><div   id="boton" class="rojo"></div></div>
+        </div>
+    </div>
+
+
+    <script>
+
+        const b1n =document.getElementById('boton')
+        const sangre = document.getElementById('sangre')
+        const eee = document.getElementById('enorme')
+
+        let a=true;
+
+        b1n.addEventListener('click', () =>{
+            
+            if(a==true){
+                sangre.classList.add('active');
+                console.log(a);
+                a=false;
+
+            }
+            else
+            {
+                sangre.classList.remove('active');
+                console.log(a);
+                a=true;
+
+            }
+        });
+
+    </script>
+</body>
+</html>
